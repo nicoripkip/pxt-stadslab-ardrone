@@ -1,14 +1,3 @@
 basic.forever(function () {
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
-})
-
-
-input.onButtonPressed(Button.A, function() {
-    
+    basic.showString("Hej Verden!")
 })
