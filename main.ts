@@ -1,3 +1,6 @@
+
+////////////// Config blocks sections //////////////
+
 // All open ports
 const ports = {
     FTP: 5551,
@@ -130,9 +133,32 @@ const ARDRONE_DETECTION_COLOR = {
     ARRACE_DONUT: 0x11
 }
 
-let testString = "Hej Verden"
+
+////////////// Custom blocks section //////////////
+//% color=190 weight=100 icon="\uf1ec" block="Ar drone blocks"
+//% groups=['AR Drone']
+namespace stadslab 
+{
+    //% block="hello world"
+    export function hellowWorld()
+    {
+        basic.showString("Hej Verden")
+    }
+
+    //% block="drone start"
+    export function droneStart()
+    {
+        
+    }
+
+    //% block="drone stop"
+    export function droneStop()
+    {
+
+    }
+}
 
 // Function to loop forever
 basic.forever(function () {
-    basic.showString(testString)
+    stadslab.hellowWorld()
 })
